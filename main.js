@@ -1,12 +1,18 @@
 // indivuadere elemento html hamburger e salvarlo
 
-const hamburgerMenu = document.querySelector(".header-right > a");
-console.log(hamburgerMenu);
+const hamburgerMenuIcon = document.querySelector(".header-right > a");
+console.log(hamburgerMenuIcon);
 
 // rilevare il click per far apparire il menu
 
-hamburgerMenu.addEventListener('click', function() {
+hamburgerMenuIcon.addEventListener('click', function() {
 
-    console.log('mi hai clickato');
+    const HAMBURGER_MENU = document.querySelector(".hamburger-menu");
+
+    HAMBURGER_MENU.classList.add("active");
+    
+    console.log('mi hai clickato', HAMBURGER_MENU);
+
+
 
 })
