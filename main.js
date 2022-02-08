@@ -1,3 +1,4 @@
+
 // indivuadere elemento html hamburger e salvarlo
 
 const hamburgerMenuIcon = document.querySelector(".header-right > a");
@@ -11,20 +12,20 @@ hamburgerMenuIcon.addEventListener('click', function() {
 
     HAMBURGER_MENU.classList.add("active");
     
-    console.log('mi hai clickato', HAMBURGER_MENU);
+    console.log('ora mi vedi', HAMBURGER_MENU);
     
     // individuo elemento che chiude menu in html e lo salvo
     
     const closeMenuIcon = document.querySelector(".close");
+    //console.log(closeMenuIcon);
     
-    console.log(closeMenuIcon);
-
     // rilevo il click per chiudere menu
     
     closeMenuIcon.addEventListener('click', function() {
-
+        
         HAMBURGER_MENU.classList.remove("active");
 
+        console.log('ora non mi vedi')
+        
     }) 
-
 })
